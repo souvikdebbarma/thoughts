@@ -9,11 +9,7 @@ const PostDetail = () => {
     'prompt-design': {
       title: 'Prompt Design',
       date: '2023-07-11',
-      content: `I'm usually averse to the common habit of trying to find old-world analogues to new-world phenomena. So please bear with me as I commit that exact sin: let me present the case for why prompting should be called prompt design and be likened to web design.
-
-I view prompting as communicating with a time-constrained human. While LLM-specific techniques are certainly helpful (most notably chain-of-thought), I've found that one of the best ways to improve performance is to just have extremely clear and high-quality instructions, similarly to how clarity and conciseness helps real humans understand better too.
-
-Prompting-as-clear-communication makes prompting sound like writing. Most of the prompting I am doing, however, is parametric: I have a number of input variables, and need to dynamically adapt my prompt to those.`,
+      content: `hello`,
       readTime: calculateReadTime(`...your full content here...`)
     },
     // Add other posts here
