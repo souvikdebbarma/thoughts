@@ -6,9 +6,9 @@ const Posts = () => {
       year: 2023,
       items: [
         {
-          title: "Prompt Design",
+          title: "Murphy's Law",
           date: "Jul 11",
-          slug: "prompt-design"
+          slug: "murphy's-law" // Match slug in PostDetail
         }
       ]
     },
@@ -18,16 +18,15 @@ const Posts = () => {
         {
           title: "Consciousness", 
           date: "Aug 24",
-          slug: "consciousness"
+          slug: "consciousness" // Match slug in PostDetail
         },
         {
           title: "In Between Moments",
           date: "Jan 24",
-          slug: "in-between-moments"
+          slug: "in-between-moments" // Match slug in PostDetail
         }
       ]
     }
-    // ... add more years/posts
   ];
 
   return (
@@ -36,11 +35,15 @@ const Posts = () => {
       <div className="space-y-16">
         {posts.map((yearGroup) => (
           <div key={yearGroup.year} className="flex">
+            {/* Year Header */}
             <div className="text-desert/40 text-3xl font-bold w-32">{yearGroup.year}</div>
+            
+            {/* Posts for the Year */}
             <div className="flex-1 space-y-4">
               {yearGroup.items.map((post) => (
                 <div key={post.slug} className="flex flex-col">
                   <div className="flex justify-between items-center">
+                    {/* Link to PostDetail */}
                     <Link 
                       to={`/posts/${post.slug}`} 
                       className="text-desert text-lg hover:text-white transition-colors duration-300"
